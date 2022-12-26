@@ -65,6 +65,7 @@ header{
 	padding: 5px 0;
 	margin: 0px 30px;
 	transition: all .50s ease;
+
 }
 .navbar a:hover{
 	color: var(--main-color);
@@ -260,7 +261,7 @@ header{
 		right: -100%;
 		width: 270px;
 		height: 30vh;
-		background: var(--main-color);
+		background-color:var(--main-color) ;
 		flex-direction: column;
 		justify-content: flex-start;
 		border-radius: 10px;
@@ -327,9 +328,16 @@ header{
 	}
 }
 /*----------------------Mobile-----------------------------*/
+@media (max-width:860px){
+	.navbar{
+		height:300px;
+
+	}
+}
+
 @media (max-width:380px){
 	.navbar{
-		height:38vh;
+		height:250px;
 	}
 	.main a {
 		font-size:1rem;
@@ -337,7 +345,7 @@ header{
 }
 @media (max-width:365px){
 	.navbar{
-		height:35vh;
+		height:250px;
 	}
 	.main a {
 		font-size:0.9rem;
