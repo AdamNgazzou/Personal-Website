@@ -330,14 +330,14 @@ header{
 /*----------------------Mobile-----------------------------*/
 @media (max-width:860px){
 	.navbar{
-		height:250px;
+		height:150px;
 
 	}
 }
 
 @media (max-width:380px){
 	.navbar{
-		height:250px;
+		height:150px;
 	}
 	.main a {
 		font-size:1rem;
@@ -345,7 +345,7 @@ header{
 }
 @media (max-width:365px){
 	.navbar{
-		height:250px;
+		height:150px;
 	}
 	.main a {
 		font-size:0.9rem;
