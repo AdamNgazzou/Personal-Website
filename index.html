@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ----Header---- -->
+    <div class="nav">
+        <header>
+            <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>Logo</span></a>
+    
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    
+            <div class="main">
+                <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+                <a href="#">Register</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+        <div class="header-text">
+            <p>High-school student</p>
+            <h1>Hi, i'm <span> Adam</span><br> Ngazzou from Tunisia</h1>
+        </div>
+    </div>
+
+   <!-- --------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="adam.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey I am Adam Ngazzou a 17 years old 11th grade student (3eme années secondaires)
+                       I am an artist , Web developer , Fighter and a Writer .<br>
+                       I aim to make the world better and make humans understand how
+                        they are being brainwashed simply by algorithms .
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(skills)">Skills</p>
+                        <p class="tab-links" onclick="opentab(experience)">Experience</p>
+                        <p class="tab-links" onclick="opentab(education)">Education</p>
+                        <p class="tab-links" onclick="opentab(Goals)">Goals</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li><span>Web Development</span><br>Developing websites</li>
+                            <li><span>artist</span><br>Draw by hand or pc programme</li>
+                            <li><span>Martial art fighter</span><br>traning wushu kungfu sanda</li>
+                            <li><span>Writer</span><br>Currently writing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Personal Website</span><br>Developped a responsive personal website</li>
+                            <li><span>Art</span><br>i Have made over 15 drawings</li>
+                            <li><span>Gold Medal</span><br>Winned a ragional martial art Tournament</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High-school</span><br>Senior year</li>
+                            <li><span>Self-Learner</span><br>I am currently learning Coding/Programming by my own</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Goals">
+                        <ul>
+                            <li><span>National champion</span><br>I am working harder than any other fighter to win the next national Tournament</li>
+                            <li><span>scholarship</span><br>I really want to get a scholarship for IB(International Baccalaureate®) or at universitie</li>
+                            <li><span>Wealth</span><br>i want to be financially independent to have the ability to focus on my dreams</li>
+                            <li><span>autobiography</span><br>Finishing my autobiography</li>
+                            <li><span>Change the World</span><br>This big society is corrupt , i will make it better</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+<!-- --------services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                <center><i class="fa-solid fa-code"></i>  </center>  
+                    <h2>Web Development</h2>
+                    <p>Les Championnats du Monde féminins de rapide et blitz auront 
+                        également la part belle au Kazakhstan avec un plateau de rêve.
+                    <br><a href="#">Learn more</a></p>
+                    
+                </div>
+                <div>
+                    <center><i class="far fa-user"></i></center>
+                    <h2>Web Development</h2>
+                    <p>Les Championnats du Monde féminins de rapide et blitz auront 
+                        également la part belle au Kazakhstan avec un plateau de rêve.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Web Development</h2>
+                    <p>Les Championnats du Monde féminins de rapide et blitz auront 
+                        également la part belle au Kazakhstan avec un plateau de rêve.  </p>
+                    <a href="#">Learn more</a>
+                </div> 
+            </div> 
+        </div>
+    </div>
+    
+    
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
