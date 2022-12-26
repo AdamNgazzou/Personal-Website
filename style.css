@@ -188,7 +188,7 @@ header{
 }
 /*-------- Services ---------------*/
 #services{
-	padding:30px 0;
+	padding:30px 10px;
 }
 .services-list{
 	display:grid;
@@ -291,8 +291,9 @@ header{
 	
 }
 @media only screen and (max-width:600px){
+	
 	.header-text{
-		margin-top: 30%;
+		margin-top: 32%;
 		font-size:16px;
 	}
 	.container{
@@ -342,6 +343,10 @@ header{
 	.main a {
 		font-size:1rem;
 	}
+	header{
+		padding:25px 2%;
+		
+	}
 }
 @media (max-width:365px){
 	.navbar{
@@ -350,5 +355,5 @@ header{
 	.main a {
 		font-size:0.9rem;
 	}
-
+	
 }
