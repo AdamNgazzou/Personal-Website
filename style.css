@@ -71,7 +71,10 @@ header{
 }
 .navbar a.active{
 	color: var(--main-color);
+	
 }
+
+
 .main{
 	display: flex;
 	align-items: center;
@@ -252,17 +255,22 @@ header{
 	}
 	.navbar{
 		position: absolute;
+		display:none;
 		top: 100%;
 		right: -100%;
 		width: 270px;
-		height: 29vh;
+		height: 30vh;
 		background: var(--main-color);
-		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		border-radius: 10px;
-		transition: all .50s ease;
+		
 	}
+	.navbar.open{
+		display:flex;
+		
+	}
+	
 	.navbar a{
 		display: block;
 		margin: 12px 0;
@@ -277,8 +285,9 @@ header{
 		color: var(--text-color);
 	}
 	.navbar.open{
-		right: 2%;
+		right: 2%;	
 	}
+	
 }
 @media only screen and (max-width:600px){
 	.header-text{
@@ -316,4 +325,22 @@ header{
 		font-size:15px;
 		margin-right:5px;
 	}
+}
+/*----------------------Mobile-----------------------------*/
+@media (max-width:380px){
+	.navbar{
+		height:38vh;
+	}
+	.main a {
+		font-size:1rem;
+	}
+}
+@media (max-width:365px){
+	.navbar{
+		height:35vh;
+	}
+	.main a {
+		font-size:0.9rem;
+	}
+
 }
