@@ -330,7 +330,7 @@ header{
 /*----------------------Mobile-----------------------------*/
 @media (max-width:860px){
 	.navbar{
-		height:380px;
+		height:300px;
 
 	}
 }
