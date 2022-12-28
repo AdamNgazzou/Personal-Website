@@ -353,8 +353,8 @@ header{
 		font-size:16px;
 	}
 	.container{
-		margin-left:0px;
-		margin-right:35px;
+		margin-left:10px;
+		margin-right:10px;
 	}
 	.row{
 		margin-left:40px;
@@ -384,8 +384,8 @@ header{
 		margin-right:5px;
 	}
 	.parent{
-		margin-left:0;
-		margin-right:35px;
+		margin-left:10px;
+		margin-right:10px;
 	}
 	.articles-list div h3{
 		padding:13px 30px;
