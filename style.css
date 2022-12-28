@@ -400,6 +400,10 @@ header{
 		height:300px;
 
 	}
+	.nav{
+		background-image:url(new3.png);
+	}
+
 }
 
 @media (max-width:450px){
