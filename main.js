@@ -9,7 +9,7 @@ menu.onclick = () => {
 /*-- ------about me ------ -- */
 var tablinks= document.getElementsByClassName("tab-links");
 var tabcontents= document.getElementsByClassName("tab-contents");
-var bloglinks= document.getElementsByClassName("blog-title");
+var bloglinks= document.getElementsByClassName("blog");
 
 function opentab(tabname){
 	for(tablink of tablinks){
@@ -23,7 +23,7 @@ function opentab(tabname){
 }
 function openblog(tabname){
 	for (bloglink of bloglinks){
-		blog.classList.remove("active-blog");
+		bloglink.classList.remove("active-blog");
 	}
 	tabname.classList.add("active-blog");
 }
