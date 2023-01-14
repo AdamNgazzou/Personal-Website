@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Adam-Ngazzou</title>
     <link rel="stylesheet" href="style.css">
     
   
 </head> 
-<body>
+<body onload="loading()">
     <!-- ----Header---- -->
     <div class="nav">
         <header>
@@ -24,23 +24,26 @@
             </ul>
     
             <div class="main">
-                <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
-                <a href="#">Register</a>
+                
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
         </header>
-        <div class="header-text">
+        <div class="header-text" id="Heading">
             <p>High-school student</p>
             <h1>Hi, i'm <span> Adam</span><br> Ngazzou from Tunisia</h1>
         </div>
     </div>
 
    <!-- -----------------------------about----------------------------- -->
-    <div id="about">
+    <div id="about" >
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="adam.png" alt="">
+                    <div id="image" >
+                    <img  id="img" class="img" src="adam.png" >
+                    <img id="img2" class="img" src="evil.jpg" >
+                    <img id="img3"  class="img" src="evill.jpg" alt="">
+                    </div>
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -190,6 +193,29 @@
     <p>In conclusion, the Law of Attraction is a flawed and potentially harmful belief system that is not supported by scientific evidence. It promotes a narrow and overly simplistic view of the world and can lead people to neglect practical considerations and the role of hard work and effort in achieving their goals. It has also been exploited by individuals and organizations who sell courses and products promising to teach people how to use the "law" to their advantage, often at great expense to the consumer. When the Law of Attraction does not produce the desired outcomes, proponents of the "law" often attribute this to a lack of belief or patience on the part of the individual, rather than acknowledging the limitations of the belief system.</p>
     </div>
 </div>
+ <!-- ---------------------------- Footer ------------------------------ -->
+ <div class="footer">
+    <div class="linkss">
+        <div class="parent1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+        <div class="parent2">
+            <h3>© Copyright adem.ng123@gmail.com 2023</h3>
+
+        </div>
+        <div class="parent3">
+            <li><a href="https://www.facebook.com/adem.ngazzou.3/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/adam_ngazzou/" target="_blank">Instagram</a></li>
+            <li><a href="mailto:adem.ng123@gmail.com" target="_blank">Email</a></li>
+            <li><a href="https://github.com/AdamNgazzou" target="_blank">Github</a></li>
+
+        </div>
+    </div>
+ </div>
  <!-- ---------------------------- JAVASCRIPT ------------------------------ -->
  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
