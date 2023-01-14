@@ -27,3 +27,36 @@ function openblog(tabname){
 	}
 	tabname.classList.add("active-blog");
 }
+/*-- ------Load transition ------ -- */
+
+
+	
+var aboute= document.getElementsByClassName("about");
+var navee=document.getElementsByClassName("nav");
+
+window.addEventListener('scroll',reveal);
+function reveal(){
+	if (document.documentElement.scrollTop > navee.length)
+		about.classList.add("load");
+}
+function loading(){
+	Heading.classList.add("load");
+
+}
+
+/*-- ------Image evnt ------ -- */
+/*var imges=document.getElementsByClassName("img");
+function yeb(slider){
+	slider.classList.add("slide");
+	timeout = setTimeout(yeb, 1000);
+    
+}
+
+function slide(slider){
+	for(imge of imges){
+		imge.classList.remove("slide");
+	}
+	yeb(slider);
+}
+*/
+
