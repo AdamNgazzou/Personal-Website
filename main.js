@@ -72,3 +72,28 @@ window.addEventListener("DOMContentLoaded", function(e) {
     }
 
   }, false);
+//--------------------*blog changer*---------------------------------//
+  const img1 = document.getElementById("blogg1");
+  const img2 = document.getElementById("blogg2");
+  const img3 = document.getElementById("blogg3");
+  const btn = document.getElementById("btn");
+  const btn1 = document.getElementById("btn1");
+  var x=600;
+  var y=-600;
+  btn.addEventListener("click", function() {
+	  if(x>-600 && y>-1800){
+	  img1.style.transform = "translateY(calc(0% + " + y + "px))";
+	  img2.style.transform = "translateY(calc(-215% + " + x + "px))";
+	  img3.style.transform = "translateY(calc(-215% + " + x + "px))";
+	  x=x-600;
+	  y=y-600;}
+  });
+  
+  btn1.addEventListener("click", function() {
+	if(y!=0 || x!=1200){
+		x=x+600;
+		y=y+600;
+		img1.style.transform = "translateY(calc(-2% + " + y + "px))";
+		img2.style.transform = "translateY(calc(-215% + " + x + "px))";
+		img3.style.transform = "translateY(calc(-215% + " + x + "px))";}
+  });
