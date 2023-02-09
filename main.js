@@ -80,7 +80,7 @@ window.addEventListener("DOMContentLoaded", function(e) {
   const btn1 = document.getElementById("btn1");
   var x=600;
   var y=-600;
-  btn.addEventListener("click", function() {
+  btn1.addEventListener("click", function() {
 	  if(x>-600 && y>-1800){
 	  img1.style.transform = "translateY(calc(0% + " + y + "px))";
 	  img2.style.transform = "translateY(calc(-215% + " + x + "px))";
@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", function(e) {
 	  y=y-600;}
   });
   
-  btn1.addEventListener("click", function() {
+  btn.addEventListener("click", function() {
 	if(y!=0 || x!=1200){
 		x=x+600;
 		y=y+600;
