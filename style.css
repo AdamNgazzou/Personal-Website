@@ -140,44 +140,14 @@ header{
 	
 }
 .img{
-	display:flex;
-	height:100%;
-	width:100%;
+	position: absolute;
+    left: 7%;
+	height:75%;
+	width: 30%;
+
 	border-radius: 15px;
-	/*opacity:0;
-	transition: all 2s ease;*/
-}/*
-.img.slide{
-	display:flex;
-	opacity: 1;
-}*/
 
-
-  #image a:nth-of-type(1) {
-    animation-name: fader;
-    animation-delay: 3s;
-    animation-duration: 1s;
-    z-index: 20;
-
-  }
-  #image a:nth-of-type(2) {
-    z-index: 10;
-    
-  }
-  #image a:nth-of-type(n+3) {
-    display: none;
-  }
-
-  @keyframes fader {
-    from { opacity: 1.0; }
-    to   { opacity: 0.05; }
-  }
-
-
-
-
-
-
+}
 
 
 .about-col-2{
@@ -529,6 +499,10 @@ color:#fff;
 /*----------------------Mobile-----------------------------*/
 @media (max-width:860px){
 	/*------------------------ blog Changer  ------------------*/
+.img{
+	height:70%;
+	width:20%;
+}
 #btn{
 	display:block;
 	position:absolute;
@@ -596,6 +570,10 @@ color:#fff;
 }
 
 @media (max-width:450px){
+	.img{
+		height:50%;
+		width:80%;
+	}
 	.navbar{
 		height:250px;
 	}
@@ -608,6 +586,10 @@ color:#fff;
 	}
 }
 @media (max-width:365px){
+	.img{
+		height:52%;
+		width:85%;
+	}
 	.navbar{
 		height:250px;
 	}
