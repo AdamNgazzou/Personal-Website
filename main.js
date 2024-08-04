@@ -44,34 +44,40 @@ function loading(){
 
 }
 
-/*-- ------Image evnt ------ -- */
-/*var imges=document.getElementsByClassName("img");
-function yeb(slider){
-	slider.classList.add("slide");
-	timeout = setTimeout(yeb, 1000);
-    
-}
-
-function slide(slider){
-	for(imge of imges){
-		imge.classList.remove("slide");
-	}
-	yeb(slider);
-}
-*/
-window.addEventListener("DOMContentLoaded", function(e) {
-
-    // Original JavaScript code by Chirp Internet: chirpinternet.eu
-    // Please acknowledge use of this code by including this header.
-
-    var stage = document.getElementById("image");
-    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
-    var arr = stage.getElementsByTagName("a");
-    for(var i=0; i < arr.length; i++) {
-      arr[i].addEventListener("animationend", fadeComplete, false);
+startImageTransition();
+function startImageTransition() {
+    let images = document.getElementsByClassName("img");
+    for (let i = 0; i < images.length; ++i) {
+        images[i].style.opacity = 1;
     }
-
-  }, false);
+    let top = 1;
+    let cur = images.length - 1;
+    setInterval(changeImage, 3000);
+    async function changeImage() {
+        let nextImage = (1 + cur) % images.length;
+        images[cur].style.zIndex = top + 1;
+        images[nextImage].style.zIndex = top;
+        await transition();
+        images[cur].style.zIndex = top;
+        images[nextImage].style.zIndex = top + 1;
+        top = top + 1;
+        images[cur].style.opacity = 1;
+        cur = nextImage;
+    }
+    function transition() {
+        return new Promise(function (resolve, reject) {
+            let del = 0.01;
+            let id = setInterval(changeOpacity, 10);
+            function changeOpacity() {
+                images[cur].style.opacity -= del;
+                if (images[cur].style.opacity <= 0) {
+                    clearInterval(id);
+                    resolve();
+                }
+            }
+        })
+    }
+}
 //--------------------*blog changer*---------------------------------//
   const img1 = document.getElementById("blogg1");
   const img2 = document.getElementById("blogg2");
